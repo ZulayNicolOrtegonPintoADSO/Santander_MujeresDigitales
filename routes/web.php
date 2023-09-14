@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/addPets', [App\Http\Controllers\Pets::class, 'createPets'])->name('AddPets');
+Route::get('/updatePets', [App\Http\Controllers\Pets::class, 'updatePets'])->name('UpdatePets');

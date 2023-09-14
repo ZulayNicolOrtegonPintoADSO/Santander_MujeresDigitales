@@ -61,6 +61,14 @@
                                         {{ __('Logout') }}
                                     </a>
 
+                                    <a class="dropdown-item" href=" {{ route('AddPets')}}">
+                                        Add Pets                                    
+                                    </a>
+
+                                    <a class="dropdown-item" href=" {{ route('UpdatePets')}}">
+                                        Update Pets                                    
+                                    </a>
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
