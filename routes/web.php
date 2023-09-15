@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/addPets', [App\Http\Controllers\Pets::class, 'createPets'])->name('AddPets');
+Route::post('/submitPet', [App\Http\Controllers\SubirMascota::class, 'submit'])->name('submitPet');
 Route::get('/updatePets', [App\Http\Controllers\Pets::class, 'updatePets'])->name('UpdatePets');
